@@ -1,0 +1,30 @@
+<?=$this->doctype() . PHP_EOL ?>
+<html>
+<head>
+<?php
+echo $this->headMeta() . PHP_EOL;
+echo $this->headTitle() . PHP_EOL;
+echo $this->jQuery() . PHP_EOL;
+echo $this->headLink() . PHP_EOL;
+echo $this->headStyle() . PHP_EOL;
+echo $this->headScript() . PHP_EOL;
+?>
+</head>
+<body>
+ 
+<div class="ui-layout-center"><?php echo $this->layout()->content ?></div>
+<div class="ui-layout-north">
+    <div id="header-logo" style="float: left">
+        <b>Quickstart for OCPHP</b>
+    </div>
+</div>
+<div class="ui-layout-south">
+	<div id="footer-right" style="float: right">
+		<p><a href="http://framework.zend.com/" target="_blank"><img src="http://framework.zend.com/images/PoweredBy_ZF_4LightBG.png" border=0 /></a></p>
+	</div>
+</div>
+<div class="ui-layout-east">East</div>
+<div class="ui-layout-west">West</div>
+ 
+</body>
+</html>
